@@ -21,15 +21,20 @@
   },
   "homepage": "https://github.com/DevilsDomain/VillaAgency.git#readme",
   "dependencies": {
+    "@vheemstra/vite-plugin-imagemin": "^2.0.0",
     "cssnano": "^6.1.1",
+    "imagemin-webp": "^8.0.0",
     "terser": "^5.29.2",
     "vite": "^5.2.2",
     "vite-bundle-visualizer": "^1.1.0",
+    "vite-plugin-image-optimizer": "^1.1.7",
     "vite-plugin-imagemin": "^0.6.1"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
+    "vite-plugin-purge-icons": "^0.10.0",
     "vite-plugin-webp-compress": "^1.1.4",
+    "vite-plugin-webp-generator": "^0.0.5",
     "wait-on": "^7.2.0"
   }
 }

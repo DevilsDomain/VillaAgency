@@ -1,7 +1,14 @@
 import { defineConfig } from "vite";
 import cssnano from "cssnano";
 import imagemin from "vite-plugin-imagemin";
-import VitePluginWebpCompress from 'vite-plugin-webp-compress';
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
+import PurgeIcons from 'vite-plugin-purge-icons';
+import viteImagemin from '@vheemstra/vite-plugin-imagemin'
+import imageminMozjpeg from 'imagemin-mozjpeg'
+import imageminWebp from 'imagemin-webp'
+
+
+
 
 export default defineConfig({
     root: ".",
@@ -13,8 +20,18 @@ export default defineConfig({
     },
     plugins: [
         cssnano(),
+        PurgeIcons(),
         imagemin({
         }), 
-        VitePluginWebpCompress(),
+        viteImagemin({
+            plugins: {
+              jpg: imageminMozjpeg(),
+            },
+            makeWebp: {
+              plugins: {
+                jpg: imageminWebp(),
+              },
+            },
+          }),
     ],
 });
