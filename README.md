@@ -22,7 +22,7 @@ Avoid enormous network payloads Total size was 3,917 KiB
 ### improvemnts
 - image compression
 - css and js minification
-- lazy loading for images 
+- lazy loading, decoding async for images 
 - replaced some scripts (like jquery, bootstrap) with cdn versions
 - added async defer to scripts
 - added preconnect to google fonts
