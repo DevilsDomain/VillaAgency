@@ -1,0 +1,35 @@
+{
+  "name": "villaagency",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shershen08/webperf-practice-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevilsDomain/VillaAgency.git"
+  },
+  "homepage": "https://github.com/DevilsDomain/VillaAgency.git#readme",
+  "dependencies": {
+    "cssnano": "^6.1.1",
+    "terser": "^5.29.2",
+    "vite": "^5.2.2",
+    "vite-bundle-visualizer": "^1.1.0",
+    "vite-plugin-imagemin": "^0.6.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "vite-plugin-webp-compress": "^1.1.4",
+    "wait-on": "^7.2.0"
+  }
+}

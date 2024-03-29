@@ -1,17 +1,26 @@
-- initial score 38
+- initial score 56
 ### Report
-Avoid large layout shifts 2 elements found
-Largest Contentful Paint element 7,640 ms
-Eliminate render-blocking resources Potential savings of 1,020 ms
+Avoid large layout shifts 8 elements found
+Enable text compression Potential savings of 1,578 KiB
+Minify JavaScript Potential savings of 1,192 KiB
+Largest Contentful Paint element 3,430 ms
+Eliminate render-blocking resources Potential savings of 500 ms
+Reduce unused CSS Potential savings of 398 KiB
 Serve images in next-gen formats Potential savings of 771 KiB
-Reduce unused CSS Potential savings of 47 KiB
-Defer offscreen images Potential savings of 159 KiB
+Preload Largest Contentful Paint image Potential savings of 160 ms
+Preconnect to required origins Potential savings of 110 ms
+Reduce unused JavaScript Potential savings of 132 KiB
 Efficiently encode images Potential savings of 48 KiB
-Preload Largest Contentful Paint image Potential savings of 10 ms
-Minify CSS Potential savings of 3 KiB
-Minify JavaScript Potential savings of 11 KiB
-Serve static assets with an efficient cache policy 37 resources found
+Page prevented back/forward cache restoration 1 failure reason
+Minify CSS Potential savings of 27 KiB
+Serve static assets with an efficient cache policy 2 resources found
 Ensure text remains visible during webfont load
 Does not use passive listeners to improve scrolling performance
 Image elements do not have explicit width and height
-Properly size images Potential savings of 84 KiB
+Avoid enormous network payloads Total size was 3,917 KiB
+
+### improvemnts
+- image compression
+- css and js minification
+- lazy loading for images 
+- replaced some scripts (like jquery, bootstrap) with cdn versions
